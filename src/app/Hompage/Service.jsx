@@ -1,9 +1,10 @@
-import Profile1 from '@/Components/Profile1'
+import Profile1 from './Profile1'
 import React from 'react'
+
 
 const Service = () => {
   return (
-    <div>
+    <div id='service'>
       <Profile1/>
     </div>
   )

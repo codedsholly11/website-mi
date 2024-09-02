@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from 'react-scroll'
 
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id='about' className='flex  flex-col px-[50px] items-center justify-center gap-[50px] bg-black h-[100vh]'>
+    <div id='about' className='flex flex-col px-[50px] items-center justify-center gap-[50px] bg-black h-[100vh]'>
       <h1 className='text-2xl font-bold text-white'>ABOUT ME</h1>
       <div className='flex justify-center gap-[50px]'>
         <div 

@@ -35,7 +35,7 @@ const Contact = () => {
             
         
   return (
-    <div className='flex items-center justify-center gap-[200px] py-[40px] w-[100%]'>
+    <div id='contact' className='flex items-center justify-center gap-[200px] py-[40px] w-[100%]'>
         <form onSubmit={fetchApi} >
             <div className='flex flex-col gap-[10px] mb-[10px]'>
                 <h1 className='text-3xl font-semibold'>Contact Me</h1>
@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
                 <div>
                     <h1 className='text-xl font-bold text-gray-800'>Message</h1>
-                    <textarea onChange={(e)=>setMessage(e.target.value)} name='message' value={message} required className='border-[#fecaca] w-[35vw] h-[30vh] rounded-xl px-[20px] bg-[gainsboro]'placeholder='How can i be of help ? '></textarea>
+                    <textarea onChange={(e)=>setMessage(e.target.value)} name='message' value={message} required className='border-[#fecaca] outline-none w-[35vw] h-[30vh] rounded-xl px-[20px] bg-[gainsboro]'placeholder='How can i be of help ? '></textarea>
                 </div>
                 <div>
                     <button className='w-[35vw] h-[7vh] bg-[#fecaca] rounded-xl font-bold'>SEND</button>
