@@ -5,9 +5,9 @@ import Image from 'next/image'
 const Profile1 = () => {
   return (
 
-    <div className='flex flex-col w-[100%] items-center justify-center py-[20px] bg-black '>
-      <h1 className='text-5xl font-bold py-[20px] text-white'>my service</h1>
-       <div className='grid grid-cols-3 w-[90%] gap-[30px] items-center justify-center'>
+    <div className='flex flex-col w-full items-center justify-center py-[20px]  '>
+      <h1 className='text-[30px] font-bold pb-7'>My Service</h1>
+       <div className='grid md:grid-cols-3  gap-[20px] items-center justify-center'>
        <Profileprops1
         pix='/images/webdes.jpeg'
         heading='Web Design'

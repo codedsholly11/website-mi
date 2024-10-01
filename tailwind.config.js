@@ -12,7 +12,21 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      clipPath: {
+        'circle': 'circle(50% at 50% 50%)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.clip-circle': {
+          clipPath: 'circle(50% at 50% 50%)',
+        },
+      };
+
+      addUtilities(newUtilities);
+    },
+  ],
 };

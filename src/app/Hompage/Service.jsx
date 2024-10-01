@@ -4,7 +4,7 @@ import React from 'react'
 
 const Service = () => {
   return (
-    <div id='service'>
+    <div id='Service'>
       <Profile1/>
     </div>
   )

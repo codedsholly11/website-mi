@@ -1,18 +1,28 @@
-import React from 'react'
+    "use client"
+import React, { useContext } from 'react'
 import Footer from '../Components/Footer'
-// import Nav from '@/Components/Nav'
 import Home from '../app/Hompage/Home'
 import Nav from '../Components/Nav'
+import { ThemeContext, ThemeContextprovider } from './Context/ThemeContext'
 
 const page = () => {
+  
   return (
-    <div>
-      <Nav/>
+    <ThemeContextprovider>
+        <Wrapper/>
+    </ThemeContextprovider>
+  )
+}  
+const Wrapper=()=>{
+  const {themecolor,textcolor}=useContext(ThemeContext)
+ return(
+ <div style={{background:themecolor, color: textcolor}}>
+  <Nav/>
       <Home/>
       <Footer/>
-      
-    </div>
-  )
-}
+  </div> 
+ )
+ 
+}     
 
 export default page
