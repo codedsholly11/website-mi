@@ -6,6 +6,8 @@ import Contact from './Contact'
 import Projects from './Projects'
 import Testimonials from './Testimonials'
 import { ThemeContext } from '../Context/ThemeContext'
+import Testimonial from './Testimonial'
+
 // import { useContext } from '../Context/ThemeContext'
 
 
@@ -19,6 +21,7 @@ const Home = () => {
       <Service/>
       <Projects/>
       <Testimonials/>
+      {/* <Testimonial/> */}
       <Contact/>
       
       </> 

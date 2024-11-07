@@ -17,7 +17,7 @@ const Wrapper=()=>{
   const {themecolor,textcolor}=useContext(ThemeContext)
  return(
  <div style={{background:themecolor, color: textcolor}}>
-  <Nav/>
+      <Nav/>
       <Home/>
       <Footer/>
   </div> 

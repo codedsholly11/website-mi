@@ -6,42 +6,42 @@ const Profile1 = () => {
   return (
 
     <div className='flex flex-col w-full items-center justify-center py-[20px]  '>
-      <h1 className='text-[30px] font-bold pb-7'>My Service</h1>
+      <h1 className='text-[30px] font-bold md:pb-7 text-[#f0394b]'>My Service</h1>
        <div className='grid md:grid-cols-3  gap-[20px] items-center justify-center'>
        <Profileprops1
         pix='/images/webdes.jpeg'
         heading='Web Design'
-        paragraph='Lorem Ipsum is simply dummy text of the Lorem has been the industry s standard dummy text ever.'
+        paragraph='Creating clean, user-friendly web designs that combine aesthetics with functionality for an engaging digital presence.'
         />
       
       <Profileprops1
         pix='/images/webdevel.jpeg'
         heading='Web Development'
-        paragraph='Lorem Ipsum is simply dummy text of the Lorem has been the industry s standard dummy text ever.'
+        paragraph='Crafting high-performance, visually stunning websites with modern technologies for an exceptional user experience..'
         />
 
       <Profileprops1
         pix='/images/Resdes.jpeg'
         heading='Responsive Design'
-        paragraph='Lorem Ipsum is simply dummy text of the Lorem has been the industry s standard dummy text ever.'
+        paragraph='Designing fully responsive websites that adapt flawlessly to any device, delivering a seamless user experience across all screen sizes.'
         />
 
       <Profileprops1
         pix='/images/Creative.jpeg'
         heading='Creative Design'
-        paragraph='Lorem Ipsum is simply dummy text of the Lorem has been the industry s standard dummy text ever.'
+        paragraph='Bringing ideas to life with innovative and creative web designs that captivate users and enhance brand identity in a very nice way'
         />
 
       <Profileprops1
         pix='/images/moapp.jpeg'
         heading='Mobile App Development '
-        paragraph='Lorem Ipsum is simply dummy text of the Lorem has been the industry s standard dummy text ever.'
+        paragraph='Building intuitive, high-performance mobile apps that deliver seamless user experiences on both iOS and Android platforms'
         />
 
       <Profileprops1
         pix='/images/webment.jpeg'
         heading='Website-Maintenance '
-        paragraph='Lorem Ipsum is simply dummy text of the Lorem has been the industry s standard dummy text ever.'
+        paragraph='Providing reliable website maintenance to ensure seamless performance, security, and updates for long-term success.'
         />
         
        </div>

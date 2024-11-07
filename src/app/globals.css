@@ -68,6 +68,7 @@
   transform: translateX(0); /* Slide to the original position */
 } 
 
+
 @media screen and (max-width:960px) {
   [data-aos="custom-slide-in"].aos-animate {
     opacity: 1;
@@ -75,11 +76,6 @@
   } 
   
 }
-
-
-
-
-
 
 .container {
   position: relative;
@@ -121,3 +117,6 @@
   white-space: nowrap;
 }
 
+.slick-slide > div {
+  margin: 0 10px;
+}

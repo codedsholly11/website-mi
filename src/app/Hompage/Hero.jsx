@@ -12,7 +12,7 @@ const Hero = () => {
       <Typewriter
         textStyle={{ fontFamily: 'Arial', fontSize: '40px', color: '#ffff' }}
         cursorColor="#3F3D56"
-        text="Web Developer on an epic journey to conquer the digital universe </>"
+        text="A Web Developer on an epic journey to conquer the digital universe </>"
         typeSpeed={50}
         deleteSpeed={50}
         loop={true} // Loops the typing effect

@@ -15,8 +15,8 @@ const About = () => {
   }, []);
 
   return (
-    <div id='About' className='flex flex-col px-[50px] pb-[20px] items-center gap-[50px] '>
-      <h1 className='md:text-[40px] text-[20px] font-bold '>ABOUT ME</h1>
+    <div id='About' className='flex flex-col px-[50px] py-[20px] items-center gap-[50px] '>
+      <h1 className=' text-[40px] font-bold text-[#f0394b]'>ABOUT ME</h1>
       <div className='flex flex-col md:flex-row sm:items-center justify-center sm:justify-center gap-[50px]'>
         <div 
           data-aos="custom-slide-in" 
@@ -30,8 +30,8 @@ const About = () => {
             height={500} 
           />
         </div>
-        <div className='aboutme md:w-[40vw] w-[90vw] m-[15px] bg-gray-800 text-white border-2 rounded-xl p-[40px] md:h-[50vh] h-[50vh] flex items-center '>
-          <div className='font-mono flex flex-col md:gap-[20px] gap-[10px] font-xl items-center'>
+        <div className='aboutme md:w-[40vw] w-[90vw] m-[15px] bg-gray-800 text-white border-2 rounded-xl md:p-[40px] p-[10px] md:h-[50vh] h-[50vh] flex items-center '>
+          <div className='font-mono flex flex-col md:gap-[20px] gap-[10px] text-lg md:text-xl  items-center'>
             <p>"Hello, I'm CODEDSHOLLY, a web developer specializing in HTML, CSS, JavaScript, Reactjs, Nextjs, Firebase, and more.</p>  
             <p>I'm passionate about crafting exceptional digital experiences.</p>  
             <p>Let's collaborate and bring your digital vision to life!"</p>

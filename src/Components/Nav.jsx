@@ -20,7 +20,7 @@ const Nav = () => {
     const distance = targetY - startY;
     let startTime = null;
 
-    const scrollStep = (currentTime) => {
+    const scrollStep = (currentTime) => { 
       if (startTime === null) startTime = currentTime;
       const progress = Math.min((currentTime - startTime) / duration, 1);
       window.scrollTo(0, startY + distance * progress);
@@ -41,8 +41,8 @@ const Nav = () => {
  };
   return (
     <div>
-        <nav className='flex fixed w-[100%] items-center justify-between px-[50px] py-[15px] cursor-pointer text-gray-500 bg-[#fcfafd] z-10'>
-            <div className='md:text-3xl font-bold text-[#f0394b]'>
+        <nav className='flex fixed w-[100%] items-center justify-between md:px-[50px] px-[15px] py-[15px] cursor-pointer text-gray-500 bg-[#fcfafd] z-10'>
+            <div className='text-[30px] font-bold text-[#f0394b]'>
                 <h1>CODEDSHOLLY</h1>
             </div>
             <ul className='md:flex gap-[40px] font-bold hidden'>
@@ -54,10 +54,10 @@ const Nav = () => {
                 <li className='hover:text-[#f0394b] cursor-pointer' onClick={() => scrollToSection("Contact")}>CONTACT</li>
                 <button className='text-[30px]' onClick={()=>{changeBackground("black", "white")}}>{themecolor === "white" ? <MdOutlineLightMode /> :<MdDarkMode />}</button>
             </ul>
-            <button onClick={handleMenu} className='flex md:hidden text-3xl font-bold'>{menu?<IoMdClose /> : <AiOutlineMenuUnfold />}</button>
+            <button onClick={handleMenu} className='flex md:hidden text-5xl font-bold'>{menu ? <IoMdClose /> : <AiOutlineMenuUnfold />}</button>
         </nav>
         {menu&&
-          <ul className={`flex fixed flex-col items-center justify-center py-[5px] bg-blue-700 w-[100vw] px-[20px] z-10 text-xl font-bold gap-[20px] top-0 ${menu?'top-14':'-top-full'}`}>
+          <ul className={`flex fixed flex-col transition-all duration-1000 ease-linear items-center justify-center py-[5px] bg-blue-100 w-[100vw] px-[20px] z-10 text-xl font-bold overflow-hidden  gap-[20px]  ${menu?'top-14':'-top-full'}`}>
           <li className='hover:text-[#f0394b] cursor-pointer' onClick={() => scrollToSection("Hero")}>HOME</li>
           <li className='hover:text-[#f0394b] cursor-pointer' onClick={() => scrollToSection("About")}>ABOUT</li>
           <li className='hover:text-[#f0394b] cursor-pointer' onClick={() => scrollToSection("Service")} >SERVICE</li>
